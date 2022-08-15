@@ -1,4 +1,19 @@
+
 @import url(fontawesome-all.min.css);
+
+
+
+:root {
+	--white: #ffffff;
+	--balck: rgb(0,0,0);
+	--section4: #115939 ;
+	--article:  #A48F76;
+	--fade1: #D9C08B;
+	--fade2: #cfa962;
+	--fade3: #C5933D;
+	--sidebarColor: #343433;
+	--sidebarLink: rgb(212, 212, 212);
+  }
 
 /*
 	Hyperspace by HTML5 UP
@@ -39,7 +54,7 @@
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
 		/*SIDEBAR COLOR*/
-		background: #312450;
+		background: var(--sidebarColor);
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -254,7 +269,7 @@
 			transition: color 0.2s ease;
 			border: 0;
 			/*SIDEBAR NAV LINK COLOR*/
-			color: rgba(255, 255, 255, 0.35);
+			color: var(--sidebarLink);
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -278,15 +293,15 @@
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: rgba(144, 94, 41, 0.738);
 			}
 
 			#sidebar nav a:after {
 				/*SIDEBAR NAV LINK GRADIENT FADE*/
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #165e04, #43fb40);
+				background-image: -webkit-linear-gradient(to right, #165e04, #43fb40);
+				background-image: -ms-linear-gradient(to right, #165e04, #43fb40);
+				background-image: linear-gradient(to right, #165e04, #43fb40);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -299,7 +314,7 @@
 			}
 
 			#sidebar nav a.active {
-				color: #ffffff;
+				color: var(--white);
 			}
 
 				#sidebar nav a.active:after {
@@ -514,7 +529,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: var(--white);
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: 300;
@@ -567,13 +582,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
-		color: #ffffff;
+		color: var(--white);
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff !important;
+			color: var(--white) !important;
 		}
 
 		a.special:not(.button) {
@@ -629,7 +644,7 @@ input, select, textarea {
 			}
 
 	strong, b {
-		color: #ffffff;
+		color: var(--white);
 		font-weight: 600;
 	}
 
@@ -642,7 +657,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: var(--white);
 		font-family: Raleway, Helvetica, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
@@ -2556,7 +2571,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: var(--white);
 		display: block;
 		font-family: Raleway, Helvetica, sans-serif;
 		font-size: 0.8em;
@@ -2619,7 +2634,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #ffffff;
+			color: var(--white);
 			background: #2e3141;
 		}
 
@@ -2659,7 +2674,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #ffffff;
+			color: var(--white);
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -2705,8 +2720,8 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #ffffff;
-			border-color: #ffffff;
+			background: var(--white);
+			border-color: var(--white);
 			content: '\f00c';
 			color: #2e3141;
 		}
@@ -3200,7 +3215,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #ffffff;
+			color: var(--white);
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -3260,7 +3275,7 @@ input, select, textarea {
 		border-radius: 5px;
 		border: 0;
 		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
-		color: #ffffff !important;
+		color: var(--white) !important;
 		cursor: pointer;
 		display: inline-block;
 		font-family: Raleway, Helvetica, sans-serif;
@@ -3398,7 +3413,7 @@ input, select, textarea {
 
 		.features article {
 			padding: 1.75em 1.75em 0.1em 1.75em ;
-			background-color: #353849;
+			background-color: var(--article);
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(50% - 1.5em);
@@ -4018,21 +4033,25 @@ input, select, textarea {
 	}
 
 	.wrapper {
-		background-color: #2e3141;
+		/*Section four background color*/
+		background-color: var(--section4);
 		margin: 6.5em 0;
 		position: relative;
 	}
 
 		.wrapper:before, .wrapper:after {
-			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141%3B' /%3E%3C/svg%3E");
+			/*Change color of the triangles before and after section four, rewrite the fill propertiy !!leave the %23 before it's an escaped charcter for #*/
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23115939%3B' /%3E%3C/svg%3E");
 		}
 
 		.wrapper:before {
-			box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
+			/*Line before section four between the triangle and the section itself*/
+			box-shadow: inset 0 -1px 0 0 var(--section4), 0 1px 0 0 var(--section4);
 		}
 
 		.wrapper:after {
-			box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
+			/*Line after section four between the triangle and the section itself*/
+			box-shadow: inset 0 -1px 0 0 var(--section4), 0 1px 0 0 var(--section4);
 		}
 
 		.wrapper:before, .wrapper:after {
@@ -4160,19 +4179,20 @@ input, select, textarea {
 			}
 
 		.wrapper.spotlight {
-			background-color: #4c5c96;
+			/*Top triangle section*/
+			background-color: var(--fade1);
 		}
 
 			.wrapper.spotlight:before, .wrapper.spotlight:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234c5c96%3B' /%3E%3C/svg%3E");
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23D9C08B%3B' /%3E%3C/svg%3E");
 			}
 
 			.wrapper.spotlight:before {
-				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+				box-shadow: inset 0 -1px 0 0 var(--fade1), 0 1px 0 0 var(--fade1);
 			}
 
 			.wrapper.spotlight:after {
-				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+				box-shadow: inset 0 -1px 0 0 var(--fade1), 0 1px 0 0 var(--fade1);
 			}
 
 			.wrapper.spotlight .inner {
@@ -4221,35 +4241,36 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight.style2 {
-				background-color: #45558d;
+				background-color: var(--fade2);
 			}
 
 				.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2345558d%3B' /%3E%3C/svg%3E");
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23cfa962%3B' /%3E%3C/svg%3E");
 				}
 
 				.wrapper.spotlight.style2:before {
-					box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
+					box-shadow: inset 0 -1px 0 0 var(--fade2), 0 1px 0 0 var(--fade2);
 				}
 
 				.wrapper.spotlight.style2:after {
-					box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
+					box-shadow: inset 0 -1px 0 0 var(--fade2), 0 1px 0 0 var(--fade2);
 				}
 
 			.wrapper.spotlight.style3 {
-				background-color: #3f4e85;
+				/*Bottom triangle section*/
+				background-color: var(--fade3);
 			}
 
 				.wrapper.spotlight.style3:before, .wrapper.spotlight.style3:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%233f4e85%3B' /%3E%3C/svg%3E");
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23C5933D%3B' /%3E%3C/svg%3E");
 				}
 
 				.wrapper.spotlight.style3:before {
-					box-shadow: inset 0 -1px 0 0 #3f4e85, 0 1px 0 0 #3f4e85;
+					box-shadow: inset 0 -1px 0 0 var(--fade3), 0 1px 0 0 var(--fade3);
 				}
 
 				.wrapper.spotlight.style3:after {
-					box-shadow: inset 0 -1px 0 0 #3f4e85, 0 1px 0 0 #3f4e85;
+					box-shadow: inset 0 -1px 0 0 var(--fade3), 0 1px 0 0 var(--fade3);
 				}
 
 			.wrapper.spotlight.style4 {
